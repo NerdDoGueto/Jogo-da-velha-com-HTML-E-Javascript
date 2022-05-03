@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://orbi.co/wp-content/uploads/2022/04/cropped-favicon_orbi-32x32.png" sizes="32x32">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Jogo da velha HTML e Javascript!</title>
+  </head>
+  <body>
+    <h1 id="page-title">Jogo da Velha</h1>
+    <div>
+        <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+    <div>
+        <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+    <div>
+        <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+    <div class="jogador">
+        <label>Jogador:</label>
+        <label id="jogador-selecionado"></label>
+    </div>
+    <div class="vencedor">
+        <label>Vencedor:</label>
+        <label id="vencedor-selecionado"></label>
+    </div>
+    <main>
+        <button onclick="reiniciar()">Reiniciar</button>
+        <button aria-label="selecionar-modo" id="mode-selector">Dark Mode</button>
+    </main>
+    <footer>
+        <div>Basecamp Javascript @ Digital Innovation One</div>
+        <div>Jogo da Velha HTML e JavaScript</div>
+        <div>Copyright © 2022 José - Todos os direitos Reservados</div>
+    <script src="assets/js/mode.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
